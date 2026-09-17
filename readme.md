@@ -1,5 +1,7 @@
 # TDA1543 Online Player
 
+> **授權：僅限非商業用途，歡迎研究、教學與交流。** 完整條款見 [LICENSE](LICENSE)，適用範圍與第三方例外見 [授權規範](LICENSING.md)。
+
 把 Raspberry Pi Zero W 上的音樂檔，經 I²S 與 TDA1543 16-bit DAC 轉成類比音訊的網頁控制播放器原型。適合想把「瀏覽器點歌」一路接到實體電路的電子與程式實作者。
 
 目前可查看電路實作、網頁與播放紀錄，並在具備相容音效硬體的 Raspberry Pi 上嘗試播放。這裡的 Online 指透過網頁控制本機曲庫，沒有串流音樂服務整合。
@@ -99,7 +101,7 @@ curl --get --data-urlencode 'name= example.flac ' http://127.0.0.1:5000/play
 
 本次文件依據主程式、模板與現存圖片整理；repo 沒有自動測試或 CI，未重新驗證 Raspberry Pi 接線、聲音輸出或舊版外部前端腳本。先完成單獨的 FFmpeg 播放，再驗證 HTTP 控制，能區分硬體與網頁問題。
 
-原 README 標示 MIT，但 repo 沒有對應的專案 LICENSE 檔，因此不能只憑徽章推定整份作品的授權。第三方來源仍各自保留：
+專案自有內容現依 [非商用研究授權](LICENSE) 發行，歡迎非商用研究、修改與交流。歷史 MIT 標示涉及的既有權利與第三方例外見 [LICENSING.md](LICENSING.md)。第三方來源仍各自保留：
 
 - 電路：上方連結的 AroundWaves 文章。
 - UI 模板：`templates/index.html` 標示 PrepBootstrap，並引用 Shield UI。
